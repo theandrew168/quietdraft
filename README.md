@@ -52,7 +52,7 @@ There, tools like [shiv](https://shiv.readthedocs.io/en/latest/) solve the probl
 That way, the individual files of different versions don't conflict with each other and cutover race condition are avoided.
 
 Can we do something similar?
-Systemd doesn't have a native way to say "use this arbitrary  working directory (controlled via a variable, maybe?)".
+Systemd doesn't have a native way to say "use this arbitrary working directory (controlled via a variable, maybe?)".
 One possible solution to this that I really like is simply making the `WorkingDirectory` a symlink ([reference](https://unix.stackexchange.com/a/629958)).
 Then, that symlink can point to any given revision of the project available on the server.
 
