@@ -43,7 +43,7 @@ Given that, what needs to happen?
 I still want to use systemd.
 The server will need to have NodeJS installed to run the app.
 Prior to starting, we need to run both `npm install` and `npm run build`.
-Actually running the app will run `npm run start`.
+Actually running the app will run `HOST=127.0.0.1 PORT=3000 node build/`.
 
 Naively, this approach has issues.
 Once the app is running, how can a new version of the code be deployed, built, and started **without impacting the currently running app**?
