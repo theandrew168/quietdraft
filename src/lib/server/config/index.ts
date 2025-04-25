@@ -8,6 +8,7 @@ export type JiraConfig = {
 	apiKey: string;
 };
 
+// TODO: Add configurable LLM backend.
 export type Config = {
 	github?: GitHubConfig;
 	jira?: JiraConfig;
