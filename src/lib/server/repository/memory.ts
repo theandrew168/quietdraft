@@ -14,6 +14,7 @@ export class MemoryFeatureRepository implements FeatureRepository {
 
 	static getInstance(): MemoryFeatureRepository {
 		if (!this.instance) {
+			console.log("Creating a new instance of MemoryFeatureRepository");
 			this.instance = new MemoryFeatureRepository();
 		}
 

@@ -5,3 +5,4 @@
 </script>
 
 <p>it works: {data.id}</p>
+<p>feature? {data.feature}</p>
