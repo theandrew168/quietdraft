@@ -1,4 +1,5 @@
 import { randomUUID } from "node:crypto";
+
 import { faGithub, faJira, faTrello } from "@fortawesome/free-brands-svg-icons";
 
 import type { Feature } from "$lib/server/domain/feature";

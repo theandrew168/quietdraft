@@ -2,6 +2,7 @@
 	import { faGithub, faJira } from "@fortawesome/free-brands-svg-icons";
 
 	import type { Source } from "$lib/server/domain/source";
+
 	import Icon from "./Icon.svelte";
 
 	type Props = {

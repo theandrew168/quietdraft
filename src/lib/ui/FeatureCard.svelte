@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Feature } from "$lib/server/domain/feature";
+
 	import FeatureSource from "./FeatureSource.svelte";
 
 	type Props = {

@@ -24,10 +24,10 @@
 		"@fortawesome/fontawesome-common-types": "^6.7.2",
 		"@fortawesome/free-brands-svg-icons": "^6.7.2",
 		"@fortawesome/free-solid-svg-icons": "^6.7.2",
+		"@ianvs/prettier-plugin-sort-imports": "^4.4.1",
 		"@sveltejs/adapter-node": "^5.2.12",
 		"@sveltejs/kit": "^2.16.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
-		"@trivago/prettier-plugin-sort-imports": "^5.2.2",
 		"@types/node": "^22.14.1",
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.3.3",
@@ -46,7 +46,22 @@
 		"singleQuote": false,
 		"trailingComma": "all",
 		"useTabs": true,
+		"importOrder": [
+			"<BUILTIN_MODULES>",
+			"",
+			"<THIRD_PARTY_MODULES>",
+			"",
+			"^\\$lib/(.*)$",
+			"",
+			"^[.]"
+		],
+		"importOrderCaseSensitive": false,
+		"importOrderTypeScriptVersion": "5.0.0",
+		"importOrderParserPlugins": [
+			"typescript"
+		],
 		"plugins": [
+			"@ianvs/prettier-plugin-sort-imports",
 			"prettier-plugin-svelte"
 		],
 		"overrides": [

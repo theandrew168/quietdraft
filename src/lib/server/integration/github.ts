@@ -3,8 +3,8 @@ import path from "node:path";
 import { Octokit } from "octokit";
 
 import { readConfigFromEnvironment } from "$lib/server/config";
-import type { GitHubPullRequestSource } from "$lib/server/domain/source";
 import type { GitHubFile, GitHubPullRequestContext } from "$lib/server/domain/context";
+import type { GitHubPullRequestSource } from "$lib/server/domain/source";
 
 /**
  * Files to be ignored because they are typically secondary to the main

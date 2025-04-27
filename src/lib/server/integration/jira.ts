@@ -1,9 +1,9 @@
 import { Version3Client } from "jira.js";
 import type { Document, Issue } from "jira.js/out/version3/models";
 
-import type { JiraIssueSource } from "$lib/server/domain/source";
-import type { JiraIssueContext } from "$lib/server/domain/context";
 import { readConfigFromEnvironment } from "$lib/server/config";
+import type { JiraIssueContext } from "$lib/server/domain/context";
+import type { JiraIssueSource } from "$lib/server/domain/source";
 
 type DocumentWithoutVersion = Omit<Document, "version">;
 

@@ -1,9 +1,9 @@
+import type { Context } from "./context";
+import type { Feature } from "./feature";
 import type { GitHubIntegration, JiraIntegration } from "./integration";
 import type { LLM } from "./llm";
 import { createPrompt } from "./prompt";
 import type { Source } from "./source";
-import type { Feature } from "./feature";
-import type { Context } from "./context";
 
 export class FeatureSummarizer {
 	private llm: LLM;
