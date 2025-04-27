@@ -1,5 +1,6 @@
 <script lang="ts">
 	import FeatureCard from "$lib/ui/FeatureCard.svelte";
+	import IntegrationCard from "$lib/ui/IntegrationCard.svelte";
 
 	import type { PageProps } from "./$types";
 
@@ -21,13 +22,13 @@
 </section>
 <section>
 	<h2>Connected Integrations</h2>
-	<!-- <ul>
-        {#each integrations as integration}
-            <li>
-                <IntegrationCard integration={integration} />
-            </li>
-        {/each}
-    </ul> -->
+	<ul>
+		{#each data.integrations as integration}
+			<li>
+				<IntegrationCard {integration} />
+			</li>
+		{/each}
+	</ul>
 </section>
 
 <style>
