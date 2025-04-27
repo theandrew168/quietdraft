@@ -1,3 +1,9 @@
+<script lang="ts">
+	import type { LayoutProps } from "./$types";
+
+	let { children }: LayoutProps = $props();
+</script>
+
 <div>
 	<header>
 		<nav class="container">
@@ -12,7 +18,7 @@
 		</nav>
 	</header>
 	<main class="container">
-		<slot />
+		{@render children()}
 	</main>
 </div>
 
