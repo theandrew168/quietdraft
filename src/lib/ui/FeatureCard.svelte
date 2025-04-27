@@ -21,7 +21,7 @@
 			</li>
 		{/each}
 	</ul>
-	<a href={`/feature/${feature.id}`}>View Documentation</a>
+	<a href={`/features/${feature.id}`}>View Documentation</a>
 </article>
 
 <style>
